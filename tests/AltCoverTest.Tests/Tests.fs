@@ -31,4 +31,10 @@ module SayTests =
                   Expect.equal
                       subject
                       "Hello Jean-Luc Picard. You were born on 2305/07/13 and your favorite number is 4. You like Red."
-                      "You didn't say hello" ]
+                      "You didn't say hello"
+              testCase "Test Connection"
+              <| fun _ ->
+                  let cn = new System.Data.SqlClient.SqlConnection("Server=localhost,1433;User Id=sa;Password=P@ssWord!")
+                  cn.Open()
+                  ()
+            ]
