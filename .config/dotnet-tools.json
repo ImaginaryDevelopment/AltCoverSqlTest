@@ -19,18 +19,6 @@
       "commands": [
         "paket"
       ]
-    },
-    "fsharp-analyzers": {
-      "version": "0.11.0",
-      "commands": [
-        "fsharp-analyzers"
-      ]
-    },
-    "fantomas-tool": {
-      "version": "4.6.1",
-      "commands": [
-        "fantomas"
-      ]
     }
   }
 }
